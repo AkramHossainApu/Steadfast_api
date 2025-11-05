@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parcel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Steadfast Parcel Booking</h1>
+    <p>Paste your order confirmation message below. The system will parse the details and show a preview before sending it to Steadfast.</p>
+    <textarea id="messageInput" placeholder="Paste confirmation message here"></textarea>
+    <button id="parseBtn">Parse Message</button>
+
+    <div id="preview" style="display:none;">
+        <h2>Preview</h2>
+        <ul>
+            <li><strong>Name:</strong> <span id="prev-name"></span></li>
+            <li><strong>Phone:</strong> <span id="prev-phone"></span></li>
+            <li><strong>Address:</strong> <span id="prev-address"></span></li>
+            <li><strong>COD Amount:</strong> <span id="prev-cod"></span></li>
+            <li><strong>Item Description:</strong> <span id="prev-desc"></span></li>
+            <li><strong>Total Lot:</strong> <span id="prev-lot"></span></li>
+        </ul>
+        <button id="confirmBtn">Confirm and Add Parcel</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
